@@ -1,0 +1,7 @@
+org\br\datum\core\RestLib.class
+org\br\datum\core\BasePage.class
+org\br\datum\steps\UsersStep.class
+org\br\datum\page\UserPage.class
+org\br\datum\steps\CucumberTest.class
+org\br\datum\config\Parametro.class
+org\br\datum\core\BaseTest.class

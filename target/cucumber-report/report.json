@@ -1,0 +1,97 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Validar se usuário é criado enviando os parametros name e job",
+        "description": "",
+        "id": "criação-de-usuários;validar-se-usuário-é-criado-enviando-os-parametros-name-e-job",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3836135000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que eu possuo a url principal da api",
+            "match": {
+              "location": "UsersStep.queEuPossuoAUrlPrincipalDaApi()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 16481435300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "eu realizar uma requisicao post para criar um usuario com o name \"Rafael\" e o job \"QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rafael\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"QA\"",
+                  "offset": 82
+                }
+              ],
+              "location": "UsersStep.euRealizarUmaRequisicaoPostParaCriarUmUsuarioComONameEOJob(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 8919700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a api deve retornar o status 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 29
+                }
+              ],
+              "location": "UsersStep.aApiDeveRetornarOStatus(int)"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 46758000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a api deve retornar um json com dados do usuario criado, name \"Rafael\" e job \"QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rafael\"",
+                  "offset": 62
+                },
+                {
+                  "val": "\"QA\"",
+                  "offset": 77
+                }
+              ],
+              "location": "UsersStep.aApiDeveRetornarUmJsonComDadosDoUsuarioCriadoNameEJob(String,String)"
+            },
+            "keyword": "E "
+          }
+        ]
+      }
+    ],
+    "name": "Criação de usuários",
+    "description": "",
+    "id": "criação-de-usuários",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/java/org/br/datum/feature/CreateUser.feature",
+    "tags": []
+  }
+]
